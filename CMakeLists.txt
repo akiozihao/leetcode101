@@ -3,4 +3,4 @@ project(leetcode101)
 
 set(CMAKE_CXX_STANDARD 20)
 
-add_executable(leetcode101 main.cpp d/d1210.cpp)
+add_executable(leetcode101 main.cpp d/d1210.cpp d/d1212.cpp)
