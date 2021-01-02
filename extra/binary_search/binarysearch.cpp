@@ -5,7 +5,7 @@
 #include <vector>
 
 using namespace std;
-
+// 第一类
 // 查找和目标值完全相等的数
 int find(vector<int> &nums, int target) {
     int left = 0, right = nums.size();
@@ -28,7 +28,7 @@ int find(vector<int> &nums, int target) {
 
 // 如果 right 初始化为 nums.size() - 1,那么必须用 left <= right,
 // 而最后的 right 的赋值必须用 right = mid - 1。
-
+// 第二类
 // 查找第一个不小于目标值的数，可变形为查找最后一个小于目标值的数
 // 这是比较常见的一类，因为要查找的目标值不一定会在数组中出现，也有可能和目标值相同的数在数组中存在多个，
 // 那么在这种情况下 nums[mid] == target 就不需要了。
@@ -43,7 +43,7 @@ int find2(vector<int> &nums,int target){
     // 这个地方返回 left 还是 right 都是正确的。while(left < right) 的结束条件就是left==right
     return right;
 }
-
+// 第三类
 // 查找第一个大于目标值的数，可变形为查找最后一个不大于目标值的数
 // 对应 upper_bound
 // 在找到第一个大于目标值的数的位置后，往前一位则是最后一个不大于目标值的位置。
@@ -62,4 +62,10 @@ int find3(vector<int>&nums,int target){
 // 从排除法的角度来考虑，nums[mid] <= target 时 left = mid + 1 使得当nums[mid] == target
 // 时 left 也会向右移动从而排除掉等于target的位置，最终会得到大于 target 的第一个位置
 
-//
+// 第四类
+// 用子函数当作判断关系 例题 leetcode
+
+// Split Array Largest Sum， Guess Number Higher or Lower，Find K Closest Elements，
+// Find K-th Smallest Pair Distance，Kth Smallest Number in Multiplication Table，
+// Maximum Average Subarray II，Minimize Max Distance to Gas Station，
+// Swim in Rising Water，Koko Eating Bananas，Nth Magical Number
