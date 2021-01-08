@@ -3,9 +3,6 @@
 #include <queue>
 using namespace std;
 int main() {
-    priority_queue<int,vector<int>,less<>> pq;
-    pq.push(0);
-    pq.push(1);
-    cout << pq.top() <<endl;
+    cout << (1<<21) << endl;
     return 0;
 }
