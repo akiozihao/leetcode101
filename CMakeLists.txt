@@ -5,4 +5,4 @@ set(CMAKE_CXX_STANDARD 20)
 
 
 
-add_executable(leetcode101  ch16/432.cpp)
+add_executable(leetcode101 main.cpp)
