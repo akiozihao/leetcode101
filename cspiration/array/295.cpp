@@ -14,11 +14,34 @@ public:
     }
 
     void addNum(int num) {
-
+        if(small.empty() || num <= small.top()){
+            small.push(num);
+        }else{
+            large.push(num);
+        }
+        makeBalance();
     }
 
     double findMedian() {
+        if(small.size() == large.size()){
+            return 0.5 * (small.top() + large.top());
+        }else{
+            return small.top();
+        }
+    }
 
+private:
+    priority_queue<int> small;
+    priority_queue<int,vector<int>,greater<>> large;
+private:
+    void makeBalance(){
+        if(small.size() < large.size()){
+            small.push(large.top());
+            large.pop();
+        }else if(small.size() > large.size() + 1){
+            large.push(small.top());
+            small.pop();
+        }
     }
 };
 

@@ -5,4 +5,4 @@ set(CMAKE_CXX_STANDARD 20)
 
 
 
-add_executable(leetcode101  week/week228/228-03.cpp week/week228/228-04.cpp week/week228/228-03-2.cpp d/d0214.cpp)
+add_executable(leetcode101  cspiration/array/295.cpp cspiration/array/053.cpp cspiration/array/053-2.cpp cspiration/array/325.cpp cspiration/array/209.cpp)
