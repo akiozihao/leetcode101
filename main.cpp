@@ -1,11 +1,15 @@
-#include<bits/stdc++.h>
+#include <bits/stdc++.h>
 
 using namespace std;
 
-int main() {
-    priority_queue<int,vector<int>,greater<>> small;
-    priority_queue<int,vector<int>,greater<>> large;
+int main()
+{
+    priority_queue<int, vector<int>,greater<>> small;
+    priority_queue<int> large;
+    large.push(1);
+    large.push(2);
     small.push(1);
     small.push(2);
     cout << small.top() << endl;
+    cout << large.top() << endl;
 }
