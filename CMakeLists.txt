@@ -1,8 +1,12 @@
-cmake_minimum_required(VERSION 3.16)
-project(leetcode101)
+cmake_minimum_required(VERSION 3.0)
 
-set(CMAKE_CXX_STANDARD 20)
+project(LEETCODE101)
 
+include_directories(${CMAKE_SOURCE_DIR}/include)
 
+# set(CMAKE_CXX_STANDARD 20)
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wall")
 
-add_executable(leetcode101  main.cpp week/tweek046/t046-01.cpp week/tweek046/t046-02.cpp week/tweek046/t046-03.cpp week/tweek046/t046-04.cpp d/d0221.cpp week/week229/229-01.cpp week/week229/229-02.cpp week/week229/229-03.cpp week/week229/229-04.cpp week/week229/d.cpp week/week229/d.h)
+set(CMAKE_BUILD_TYPE Debug)
+
+add_executable(main_cmake week/week230/230-03.cpp)
