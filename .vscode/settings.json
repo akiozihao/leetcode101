@@ -1,6 +1,11 @@
 {
     "C_Cpp.default.configurationProvider": "ms-vscode.cmake-tools",
     "files.associations": {
-        "vector": "cpp"
-    }
+        "vector": "cpp",
+        "cmath": "cpp",
+        "complex": "cpp"
+    },
+    "cSpell.words": [
+        "inorder"
+    ]
 }
